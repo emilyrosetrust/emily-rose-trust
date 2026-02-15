@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Heart, Shield, Leaf } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
 import FaqSection from "@/components/FaqSection";
+import LottieIcon from "@/components/LottieIcon";
 import useFadeInOnScroll from "@/hooks/useFadeInOnScroll";
 import heroImage from "@/assets/hero-image.jpg";
+import lottieHeart from "@/assets/lottie-heart.json";
+import lottieShield from "@/assets/lottie-shield.json";
+import lottieLeaf from "@/assets/lottie-leaf.json";
 
 const GOFUNDME_URL = "https://www.gofundme.com/f/support-emily-roses-family-with-time-together";
 
@@ -14,7 +17,7 @@ const Index = () => {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         <img
           src={heroImage}
           alt="Warm golden light through trees, representing hope and togetherness"
@@ -22,14 +25,14 @@ const Index = () => {
           loading="eager"
         />
         <div className="hero-overlay absolute inset-0" />
-        <div className="relative z-10 section-container text-center py-20">
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 text-balance leading-tight">
+        <div className="relative z-10 section-container py-20">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
             Time Matters Most.
           </h1>
-          <p className="text-lg sm:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
+          <p className="text-lg sm:text-xl text-foreground/90 max-w-2xl mb-10 leading-relaxed text-balance">
             Supporting Emily Rose and giving her parents the freedom to be fully present with her.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-start gap-4">
             <a href={GOFUNDME_URL} target="_blank" rel="noopener noreferrer">
               <Button variant="hero-primary" size="lg" className="min-w-[180px]">
                 Donate Now
@@ -77,19 +80,19 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
             {[
               {
-                icon: <Heart className="text-primary" size={32} />,
+                animation: lottieHeart,
                 title: "Time Together",
                 text: "Your support gives Emily Rose's parents the financial freedom to step back from work and spend uninterrupted time with her.",
               },
               {
-                icon: <Shield className="text-primary" size={32} />,
+                animation: lottieShield,
                 title: "Stability & Security",
                 text: "Funds help cover lost income and essential living costs so the family can focus fully on Emily Rose without added financial pressure.",
               },
               {
-                icon: <Leaf className="text-primary" size={32} />,
+                animation: lottieLeaf,
                 title: "Meaningful Moments",
-                text: "Support may allow small, meaningful experiences together — moments away from hospital routines centred simply on love, presence and being together as a family.",
+                text: "Support may allow small, meaningful experiences together, moments away from hospital routines centred simply on love, presence and being together as a family.",
               },
             ].map((item, i) => (
               <div
@@ -98,7 +101,7 @@ const Index = () => {
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary mb-5">
-                  {item.icon}
+                  <LottieIcon animationData={item.animation} size={40} />
                 </div>
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                   {item.title}

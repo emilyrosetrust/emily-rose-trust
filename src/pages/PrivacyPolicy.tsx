@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
             Privacy Policy
           </h1>
           <p className="text-center text-muted-foreground mb-12">
-            Emily Rose Trust Website — Last Updated: 15/02/2026
+            Emily Rose Trust Website · Last Updated: 15/02/2026
           </p>
 
           <div className="space-y-10 text-muted-foreground text-lg leading-relaxed">
@@ -82,9 +82,9 @@ const PrivacyPolicy = () => {
               <h2 className="font-serif text-2xl font-semibold text-foreground mb-3">4. Lawful Basis for Processing</h2>
               <p>Under GDPR, we process personal data based on the following lawful grounds:</p>
               <ul className="list-disc pl-6 mt-3 space-y-2">
-                <li><span className="font-medium text-foreground">Consent</span> — Where you submit information voluntarily (e.g. contact form, email).</li>
-                <li><span className="font-medium text-foreground">Legitimate Interest</span> — To respond to enquiries, improve the Website, and maintain security.</li>
-                <li><span className="font-medium text-foreground">Legal Obligation</span> — Where required by Irish law.</li>
+                <li><span className="font-medium text-foreground">Consent</span>, where you submit information voluntarily (e.g. contact form, email).</li>
+                <li><span className="font-medium text-foreground">Legitimate Interest</span>, to respond to enquiries, improve the Website, and maintain security.</li>
+                <li><span className="font-medium text-foreground">Legal Obligation</span>, where required by Irish law.</li>
               </ul>
             </div>
 
