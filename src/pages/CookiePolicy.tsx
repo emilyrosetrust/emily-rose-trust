@@ -12,7 +12,7 @@ const CookiePolicy = () => {
             Cookie Policy
           </h1>
           <p className="text-center text-muted-foreground mb-12">
-            Emily Rose Trust Website — Last Updated: 15/02/2026
+            Emily Rose Trust Website · Last Updated: 15/02/2026
           </p>
 
           <div className="space-y-10 text-muted-foreground text-lg leading-relaxed">
@@ -48,8 +48,8 @@ const CookiePolicy = () => {
               </p>
               <p className="mt-3">Cookies can be:</p>
               <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li><strong className="text-foreground">Session cookies</strong> — deleted when you close your browser</li>
-                <li><strong className="text-foreground">Persistent cookies</strong> — remain until they expire or are deleted</li>
+                <li><strong className="text-foreground">Session cookies</strong>, deleted when you close your browser</li>
+                <li><strong className="text-foreground">Persistent cookies</strong>, remain until they expire or are deleted</li>
               </ul>
             </div>
 
@@ -66,7 +66,7 @@ const CookiePolicy = () => {
               </ul>
               <p className="mt-3">These cookies do not require consent under Irish law.</p>
 
-              <h3 className="font-serif text-xl font-medium text-foreground mt-6 mb-2">3.2 Analytics Cookies (Optional — Consent Required)</h3>
+              <h3 className="font-serif text-xl font-medium text-foreground mt-6 mb-2">3.2 Analytics Cookies (Optional, Consent Required)</h3>
               <p>We may use analytics tools (such as Google Analytics or similar services) to collect anonymised information about:</p>
               <ul className="list-disc pl-6 mt-2 space-y-1">
                 <li>Pages visited</li>
@@ -78,7 +78,7 @@ const CookiePolicy = () => {
               <p className="mt-3">These cookies help us improve performance, understand visitor behaviour and optimise user experience.</p>
               <p className="mt-3">Analytics cookies are only activated if you provide consent via the Concord.tech cookie banner.</p>
 
-              <h3 className="font-serif text-xl font-medium text-foreground mt-6 mb-2">3.3 Social Media &amp; Sharing Cookies (Optional — Consent Required)</h3>
+              <h3 className="font-serif text-xl font-medium text-foreground mt-6 mb-2">3.3 Social Media &amp; Sharing Cookies (Optional, Consent Required)</h3>
               <p>
                 If you use social sharing buttons (e.g., WhatsApp, Facebook, LinkedIn, X, Instagram), those platforms may set cookies or collect data according to their own policies.
               </p>

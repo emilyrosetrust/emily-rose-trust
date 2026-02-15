@@ -12,7 +12,7 @@ const TermsAndConditions = () => {
             Terms &amp; Conditions
           </h1>
           <p className="text-center text-muted-foreground mb-12">
-            Emily Rose Trust Website — Last Updated: 15/02/2026
+            Emily Rose Trust Website · Last Updated: 15/02/2026
           </p>
 
           <div className="space-y-10 text-muted-foreground text-lg leading-relaxed">

@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Share2, Building2, Heart } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import ShareButtons from "@/components/ShareButtons";
+import LottieIcon from "@/components/LottieIcon";
 import useFadeInOnScroll from "@/hooks/useFadeInOnScroll";
+import lottieHeart from "@/assets/lottie-heart.json";
+import lottieLoveCare from "@/assets/lottie-love-care.json";
+import lottieShare from "@/assets/lottie-share.json";
+import lottieBuildings from "@/assets/lottie-buildings.json";
 
 const GOFUNDME_URL = "https://www.gofundme.com/f/support-emily-roses-family-with-time-together";
 
@@ -11,7 +16,7 @@ const SupportEmilyRose = () => {
 
   const options = [
     {
-      icon: <Heart className="text-primary" size={28} />,
+      animation: lottieHeart,
       title: "Donate via GoFundMe",
       text: "Make a direct contribution through the official GoFundMe campaign.",
       action: (
@@ -23,7 +28,7 @@ const SupportEmilyRose = () => {
       ),
     },
     {
-      icon: <Heart className="text-primary" size={28} />,
+      animation: lottieLoveCare,
       title: "Donate to the Trust",
       text: "Donate directly to the Emily Rose Trust. Details will be shared once the Trust is fully finalised.",
       action: (
@@ -33,13 +38,13 @@ const SupportEmilyRose = () => {
       ),
     },
     {
-      icon: <Share2 className="text-primary" size={28} />,
+      animation: lottieShare,
       title: "Share the Website",
       text: "Sharing Emily Rose's story is one of the most powerful ways you can help.",
       action: <ShareButtons />,
     },
     {
-      icon: <Building2 className="text-primary" size={28} />,
+      animation: lottieBuildings,
       title: "Corporate Support",
       text: "Businesses and organisations wishing to contribute or partner can reach out directly.",
       action: (
@@ -68,7 +73,7 @@ const SupportEmilyRose = () => {
               style={{ transitionDelay: `${i * 80}ms` }}
             >
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-secondary mb-5">
-                {opt.icon}
+                <LottieIcon animationData={opt.animation} size={36} />
               </div>
               <h2 className="font-serif text-xl font-semibold text-foreground mb-3">{opt.title}</h2>
               <p className="text-muted-foreground leading-relaxed mb-6 flex-1">{opt.text}</p>
