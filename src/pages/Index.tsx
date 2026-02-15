@@ -39,7 +39,7 @@ const Index = () => {
               </Button>
             </a>
             <Link to="/emilys-story">
-              <Button variant="hero-secondary" size="lg" className="min-w-[180px]">
+              <Button variant="hero-secondary" size="lg" className="min-w-[180px] border-foreground/80 text-foreground hover:bg-foreground/10">
                 Read Emily Rose's Story
               </Button>
             </Link>

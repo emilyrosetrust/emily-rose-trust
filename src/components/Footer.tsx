@@ -25,7 +25,6 @@ const Footer = () => {
               <Link to="/the-trust" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">The Trust</Link>
               <Link to="/support-emily-rose" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Support Emily Rose</Link>
               <Link to="/updates" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Updates</Link>
-              <Link to="/contact" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact</Link>
             </nav>
           </div>
 
@@ -52,6 +51,7 @@ const Footer = () => {
             >
               info@emilyrosetrust.com
             </a>
+            <Link to="/contact" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact Form</Link>
           </div>
         </div>
 
