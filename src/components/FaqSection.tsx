@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Accordion,
   AccordionContent,
@@ -5,7 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqs = [
+const faqs: { q: string; a: React.ReactNode }[] = [
   {
     q: "What is the Emily Rose Trust?",
     a: "The Emily Rose Trust has been created to ensure that all funds raised are used solely to support Emily Rose and her family. Its purpose is to provide financial stability and allow her parents to focus entirely on spending meaningful time with her.",
@@ -24,7 +25,13 @@ const faqs = [
   },
   {
     q: "How can I donate?",
-    a: "You can donate through the official GoFundMe campaign or directly to the Emily Rose Trust via the links on this website.",
+    a: (
+      <>
+        You can donate through the official{" "}
+        <a href="https://www.gofundme.com/f/support-emily-roses-family-with-time-together" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80 transition-colors">GoFundMe campaign</a>{" "}
+        or directly to the Emily Rose Trust via the links on this website.
+      </>
+    ),
   },
   {
     q: "Can I support in ways other than donating?",

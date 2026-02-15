@@ -59,7 +59,7 @@ const ShareButtons = () => {
   ];
 
   return (
-    <div className="flex flex-wrap items-center justify-center gap-3">
+    <div className="grid grid-cols-4 gap-3 justify-items-center max-w-[200px] mx-auto">
       {shares.map((s) => (
         <a
           key={s.label}

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="section-container py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
             <h3 className="font-serif text-xl font-semibold mb-3">Emily Rose Trust</h3>
@@ -14,10 +14,10 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Navigation */}
+          {/* Quick Links */}
           <div>
             <h4 className="font-sans text-sm font-semibold uppercase tracking-wider mb-4 text-primary-foreground/70">
-              Navigation
+              Quick Links
             </h4>
             <nav className="flex flex-col gap-2" aria-label="Footer navigation">
               <Link to="/" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Home</Link>
@@ -29,13 +29,25 @@ const Footer = () => {
             </nav>
           </div>
 
+          {/* Legal */}
+          <div>
+            <h4 className="font-sans text-sm font-semibold uppercase tracking-wider mb-4 text-primary-foreground/70">
+              Legal
+            </h4>
+            <nav className="flex flex-col gap-2" aria-label="Legal navigation">
+              <Link to="/terms-and-conditions" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Terms &amp; Conditions</Link>
+              <Link to="/privacy-policy" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Privacy Policy</Link>
+              <Link to="/cookie-policy" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Cookie Policy</Link>
+            </nav>
+          </div>
+
           {/* Contact */}
           <div>
             <h4 className="font-sans text-sm font-semibold uppercase tracking-wider mb-4 text-primary-foreground/70">
               Contact
             </h4>
             <a
-              href="mailto:info@emilyrosetrust.com"
+              href="mailto:info@emilyrosetrust.com?subject=Emily Rose Trust Website Contact"
               className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
             >
               info@emilyrosetrust.com
@@ -44,19 +56,14 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 pt-6 border-t border-primary-foreground/20">
-          <nav className="flex flex-wrap justify-center gap-4 mb-6" aria-label="Legal navigation">
-            <Link to="/terms-and-conditions" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Terms &amp; Conditions</Link>
-            <Link to="/privacy-policy" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Privacy Policy</Link>
-            <Link to="/cookie-policy" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Cookie Policy</Link>
-          </nav>
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-primary-foreground/60">
-            © {new Date().getFullYear()} Emily Rose Trust. All rights reserved.
-          </p>
-          <p className="text-xs text-primary-foreground/60 flex items-center gap-1">
-            Made with <Heart size={12} className="text-primary-foreground/80" /> for Emily Rose
-          </p>
-        </div>
+            <p className="text-xs text-primary-foreground/60">
+              © {new Date().getFullYear()} Emily Rose Trust. All rights reserved.
+            </p>
+            <p className="text-xs text-primary-foreground/60 flex items-center gap-1">
+              Made with <Heart size={12} className="text-primary-foreground/80" /> for Emily Rose
+            </p>
+          </div>
         </div>
       </div>
     </footer>
