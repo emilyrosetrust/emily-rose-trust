@@ -45,13 +45,15 @@ const Footer = () => {
             <h4 className="font-sans text-sm font-semibold uppercase tracking-wider mb-4 text-primary-foreground/70">
               Contact
             </h4>
-            <a
-              href="mailto:info@emilyrosetrust.com?subject=Emily Rose Trust Website Contact"
-              className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-            >
-              info@emilyrosetrust.com
-            </a>
-            <Link to="/contact" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact Form</Link>
+            <nav className="flex flex-col gap-2" aria-label="Contact options">
+              <a
+                href="mailto:info@emilyrosetrust.com?subject=Emily Rose Trust Website Contact"
+                className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
+                info@emilyrosetrust.com
+              </a>
+              <Link to="/contact" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact Form</Link>
+            </nav>
           </div>
         </div>
 
