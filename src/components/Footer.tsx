@@ -43,13 +43,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-primary-foreground/20 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="mt-10 pt-6 border-t border-primary-foreground/20">
+          <nav className="flex flex-wrap justify-center gap-4 mb-6" aria-label="Legal navigation">
+            <Link to="/terms-and-conditions" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Terms &amp; Conditions</Link>
+            <Link to="/privacy-policy" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Privacy Policy</Link>
+            <Link to="/cookie-policy" className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors">Cookie Policy</Link>
+          </nav>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-primary-foreground/60">
             © {new Date().getFullYear()} Emily Rose Trust. All rights reserved.
           </p>
           <p className="text-xs text-primary-foreground/60 flex items-center gap-1">
             Made with <Heart size={12} className="text-primary-foreground/80" /> for Emily Rose
           </p>
+        </div>
         </div>
       </div>
     </footer>
