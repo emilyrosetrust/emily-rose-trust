@@ -4,7 +4,6 @@ import ShareButtons from "@/components/ShareButtons";
 import FaqSection from "@/components/FaqSection";
 import LottieIcon from "@/components/LottieIcon";
 import useFadeInOnScroll from "@/hooks/useFadeInOnScroll";
-import heroImage from "@/assets/hero-image.jpg";
 import lottieHeart from "@/assets/lottie-heart.json";
 import lottieShield from "@/assets/lottie-shield.json";
 import lottieLeaf from "@/assets/lottie-leaf.json";
@@ -19,27 +18,27 @@ const Index = () => {
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         <img
-          src={heroImage}
-          alt="Warm golden light through trees, representing hope and togetherness"
+          src="/emily-rose-trust-support-cover-section-roscommon.jpg"
+          alt="Scenic view of Roscommon landscape with lakes and rolling hills"
           className="absolute inset-0 w-full h-full object-cover"
           loading="eager"
         />
         <div className="hero-overlay absolute inset-0" />
-        <div className="relative z-10 section-container py-20">
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance leading-tight">
+        <div className="relative z-10 section-container py-20 text-center">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance leading-tight">
             Time Matters Most.
           </h1>
-          <p className="text-lg sm:text-xl text-foreground/90 max-w-2xl mb-10 leading-relaxed text-balance">
+          <p className="text-lg sm:text-xl text-white max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
             Supporting Emily Rose and giving her parents the freedom to be fully present with her.
           </p>
-          <div className="flex flex-col sm:flex-row items-start gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href={GOFUNDME_URL} target="_blank" rel="noopener noreferrer">
               <Button variant="hero-primary" size="lg" className="min-w-[180px]">
                 Donate Now
               </Button>
             </a>
             <Link to="/emilys-story">
-              <Button variant="hero-secondary" size="lg" className="min-w-[180px] border-foreground/80 text-foreground hover:bg-foreground/10">
+              <Button variant="hero-secondary" size="lg" className="min-w-[180px] border-white text-white hover:bg-white/10">
                 Read Emily Rose's Story
               </Button>
             </Link>
