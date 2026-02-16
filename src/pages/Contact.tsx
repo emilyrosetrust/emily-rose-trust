@@ -18,19 +18,47 @@ const Contact = () => {
   useFadeInOnScroll();
   const { toast } = useToast();
   const [submitting, setSubmitting] = useState(false);
+  const [reason, setReason] = useState("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
-    // Placeholder - would submit to real endpoint
-    setTimeout(() => {
-      setSubmitting(false);
-      toast({
-        title: "Message sent",
-        description: "Thank you for reaching out. We will respond as soon as possible.",
+    
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xlgwngyj", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
       });
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+
+      if (response.ok) {
+        toast({
+          title: "Message sent",
+          description: "Thank you for reaching out. We will respond as soon as possible.",
+        });
+        form.reset();
+        setReason("");
+      } else {
+        toast({
+          title: "Error",
+          description: "There was a problem sending your message. Please try again or email us directly.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again or email us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -68,18 +96,19 @@ const Contact = () => {
 
               <div className="space-y-2">
                 <Label htmlFor="reason">Reason for Getting in Touch</Label>
-                <Select name="reason" required>
+                <Select value={reason} onValueChange={setReason} required>
                   <SelectTrigger>
                     <SelectValue placeholder="Select a reason" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="support">I'd like to support Emily Rose</SelectItem>
-                    <SelectItem value="corporate">Corporate or partnership enquiry</SelectItem>
+                    <SelectItem value="corporate">Corporate enquiry</SelectItem>
                     <SelectItem value="media">Media enquiry</SelectItem>
                     <SelectItem value="general">General message of support</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>
+                <input type="hidden" name="reason" value={reason} />
               </div>
 
               <div className="space-y-2">
