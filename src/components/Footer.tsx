@@ -21,7 +21,7 @@ const Footer = () => {
             </h4>
             <nav className="flex flex-col gap-2" aria-label="Footer navigation">
               <Link to="/" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Home</Link>
-              <Link to="/emilys-story" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Emily's Story</Link>
+              <Link to="/emily-roses-story" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Emily Rose's Story</Link>
               <Link to="/the-trust" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">The Trust</Link>
               <Link to="/support-emily-rose" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Support Emily Rose</Link>
               <Link to="/updates" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Updates</Link>

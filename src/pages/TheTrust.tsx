@@ -23,6 +23,9 @@ const TheTrust = () => {
               It exists to provide financial stability, cover essential living costs and allow Stephen and Karyn the time and freedom to focus entirely on Emily Rose during this period.
             </p>
             <p>
+              The Trust has been established to ensure funds are used solely to support Emily Rose and to give her parents the financial freedom to focus fully on her during this time.
+            </p>
+            <p>
               We are committed to transparency and accountability in how funds are managed and distributed.
             </p>
           </div>

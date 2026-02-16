@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
@@ -43,11 +44,23 @@ const faqs: { q: string; a: React.ReactNode }[] = [
   },
   {
     q: "Can businesses or organisations contribute?",
-    a: "Yes. Corporate support, fundraising events, or network sharing are welcomed. Please contact us directly for partnership discussions.",
+    a: (
+      <>
+        Yes. Corporate support, fundraising events, or network sharing are welcomed. Please{" "}
+        <Link to="/contact" className="text-primary underline hover:text-primary/80 transition-colors">contact us</Link>{" "}
+        directly.
+      </>
+    ),
   },
   {
     q: "Where can I read updates?",
-    a: "Updates are shared in the Updates section of the website to keep supporters informed.",
+    a: (
+      <>
+        Updates are shared in the{" "}
+        <Link to="/updates" className="text-primary underline hover:text-primary/80 transition-colors">Updates section</Link>{" "}
+        of the website to keep supporters informed.
+      </>
+    ),
   },
   {
     q: "How long will the fundraiser run?",

@@ -11,6 +11,7 @@ const LottieIcon = ({ animationData, size = 40 }: LottieIconProps) => {
       animationData={animationData}
       loop
       autoplay
+      speed={0.2}
       style={{ width: size, height: size }}
     />
   );

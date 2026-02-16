@@ -37,7 +37,7 @@ const Index = () => {
                 Donate Now
               </Button>
             </a>
-            <Link to="/emilys-story">
+            <Link to="/emily-roses-story">
               <Button variant="hero-secondary" size="lg" className="min-w-[180px] border-white text-white hover:bg-white/10">
                 Read Emily Rose's Story
               </Button>
@@ -60,7 +60,7 @@ const Index = () => {
               After years of treatment, her parents, Stephen and Karyn, have now been told there are no further curative options. Emily Rose's condition is deteriorating rapidly and the focus has shifted to comfort, care and making the most of the time they have together. Time has suddenly become their most precious and fragile resource.
             </p>
             <div className="text-center">
-              <Link to="/emilys-story">
+              <Link to="/emily-roses-story">
                 <Button variant="outline" size="lg">
                   Learn More
                 </Button>

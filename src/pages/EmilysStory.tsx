@@ -32,6 +32,9 @@ const EmilysStory = () => {
               <p>
                 All funds raised will go directly into the Emily Rose Trust, which is currently being finalised. The Trust has been established to ensure funds are used solely to support Emily Rose and to give her parents the financial freedom to focus fully on her during this time.
               </p>
+              <p>
+                Upon her passing any surplus funds will be distributed by the Emily Rose Trust to The Children's Heart Centre Crumlin, Cliona's Kids and Cian's Kennels.
+              </p>
             </div>
 
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
