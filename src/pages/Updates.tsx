@@ -3,22 +3,10 @@ import useFadeInOnScroll from "@/hooks/useFadeInOnScroll";
 
 const updates = [
   {
-    slug: "grateful-for-support",
-    title: "Grateful for the Outpouring of Support",
-    date: "February 2026",
-    text: "We are deeply grateful for the kindness and generosity shown so far. Every message, donation and share has reminded Stephen and Karyn that they are not walking this road alone.",
-  },
-  {
     slug: "trust-formation-progress",
     title: "Trust Formation Progress",
     date: "February 2026",
     text: "The Emily Rose Trust legal structure is currently being finalised. We are committed to full transparency and will share updates as everything becomes officially active.",
-  },
-  {
-    slug: "thank-you-creative-community",
-    title: "Thank You to the Creative Community",
-    date: "February 2026",
-    text: "Friends and colleagues from the animation and business communities have begun reaching out with incredible support. It means more than words can express.",
   },
 ];
 

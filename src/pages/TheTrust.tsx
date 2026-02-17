@@ -20,13 +20,16 @@ const TheTrust = () => {
               The Emily Rose Trust has been established to ensure that all funds raised are used solely to support Emily Rose and her family.
             </p>
             <p>
-              It exists to provide financial stability, cover essential living costs and allow Stephen and Karyn the time and freedom to focus entirely on Emily Rose during this period.
+              It exists to provide financial stability, cover essential living costs and allow Stephen and Karyn the time and freedom to focus entirely on Emily Rose during this period, while also supporting improvements to the family's quality of life.
             </p>
             <p>
               The Trust has been established to ensure funds are used solely to support Emily Rose and to give her parents the financial freedom to focus fully on her during this time.
             </p>
             <p>
               We are committed to transparency and accountability in how funds are managed and distributed.
+            </p>
+            <p>
+              Upon her passing any surplus funds will be distributed by the Emily Rose Trust to The Children's Heart Centre Crumlin, Cliona's Kids and Cian's Kennels.
             </p>
           </div>
 

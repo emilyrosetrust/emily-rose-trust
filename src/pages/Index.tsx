@@ -57,7 +57,7 @@ const Index = () => {
               Emily Rose is a beautiful, brave little girl who has been fighting complex heart and lung conditions since birth. Despite countless surgeries and long hospital stays, she continues to bring light and love to everyone around her.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              After years of treatment, her parents, Stephen and Karyn, have now been told there are no further curative options. Emily Rose's condition is deteriorating rapidly and the focus has shifted to comfort, care and making the most of the time they have together. Time has suddenly become their most precious and fragile resource.
+              After years of treatment, her parents, Stephen and Karyn, have now been told there are no further curative options. Stephen, Karyn and Emily Rose Fagan live in Boyle, Co. Roscommon, where they are surrounded by a caring and supportive community. Emily Rose's condition is deteriorating rapidly and the focus has shifted to comfort, care and making the most of the time they have together. Time has suddenly become their most precious and fragile resource.
             </p>
             <div className="text-center">
               <Link to="/emily-roses-story">
@@ -158,19 +158,11 @@ const Index = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-10 text-center fade-in-on-scroll">
             Latest Updates
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="max-w-2xl mx-auto">
             {[
-              {
-                title: "Grateful for the Outpouring of Support",
-                text: "We are deeply grateful for the kindness and generosity shown so far. Every message, donation and share has reminded Stephen and Karyn that they are not walking this road alone.",
-              },
               {
                 title: "Trust Formation Progress",
                 text: "The Emily Rose Trust legal structure is currently being finalised. We are committed to full transparency and will share updates as everything becomes officially active.",
-              },
-              {
-                title: "Thank You to the Creative Community",
-                text: "Friends and colleagues from the animation and business communities have begun reaching out with incredible support. It means more than words can express.",
               },
             ].map((update, i) => (
               <article

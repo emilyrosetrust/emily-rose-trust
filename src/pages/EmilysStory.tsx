@@ -21,7 +21,7 @@ const EmilysStory = () => {
                 Emily Rose is a beautiful, brave little girl who has been fighting complex heart and lung conditions since birth. Despite countless surgeries and long hospital stays, she continues to bring light and love to everyone around her.
               </p>
               <p>
-                After years of treatment, her parents, Stephen and Karyn, have now been told there are no further curative options. Emily Rose's condition is deteriorating rapidly and the focus has shifted to comfort, care and making the most of the time they have together. Time has suddenly become their most precious and fragile resource.
+                After years of treatment, her parents, Stephen and Karyn, have now been told there are no further curative options. Stephen, Karyn and Emily Rose Fagan live in Boyle, Co. Roscommon, where they are surrounded by a caring and supportive community. Emily Rose's condition is deteriorating rapidly and the focus has shifted to comfort, care and making the most of the time they have together. Time has suddenly become their most precious and fragile resource.
               </p>
               <p>
                 This fundraiser is about giving Emily Rose's parents the financial breathing space to step back from work and spend uninterrupted time with their daughter. Funds will help cover lost income and daily living costs, allowing them to focus fully on Emily Rose and create meaningful memories in the months ahead.

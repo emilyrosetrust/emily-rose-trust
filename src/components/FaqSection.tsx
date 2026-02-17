@@ -18,7 +18,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
   },
   {
     q: "How will donations be used?",
-    a: "Donations will help cover lost income and essential living costs so Stephen and Karyn can focus on Emily Rose without financial pressure.",
+    a: "It exists to provide financial breathing space, allow Stephen and Karyn the time and freedom to focus entirely on Emily Rose during this period, while also supporting improvements to the family's quality of life.",
   },
   {
     q: "Is this fundraiser for medical expenses?",
