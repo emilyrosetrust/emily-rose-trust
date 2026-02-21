@@ -3,6 +3,12 @@ import useFadeInOnScroll from "@/hooks/useFadeInOnScroll";
 
 const updates = [
   {
+    slug: "gofundme-campaign",
+    title: "GoFundMe Campaign",
+    date: "February 2026",
+    text: "We are eternally grateful for the incredible support shown to Emily Rose and the Emily Rose Trust. The generosity over the last few days has been more than we ever could have hoped for. Thank you for every donation and every share. As mentioned, all funds are overseen by the Emily Rose Trust and any surplus funds will be distributed to The Children's Heart Centre Crumlin, Cliona's Kids and Cian's Kennels.",
+  },
+  {
     slug: "trust-formation-progress",
     title: "Trust Formation Progress",
     date: "February 2026",
