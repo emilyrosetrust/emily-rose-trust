@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
               <p className="mt-3 font-medium text-foreground">Emily Rose Trust</p>
               <p>
                 Email:{" "}
-                <a href="mailto:info@emilyrosetrust.com" className="text-primary underline hover:text-primary/80 transition-colors">info@emilyrosetrust.com</a>
+                <a href="mailto:trustees@emilyrosetrust.com" className="text-primary underline hover:text-primary/80 transition-colors">trustees@emilyrosetrust.com</a>
               </p>
               <p>
                 Website:{" "}
@@ -137,7 +137,7 @@ const PrivacyPolicy = () => {
               </ul>
               <p className="mt-3">
                 To exercise any of these rights, contact:{" "}
-                <a href="mailto:info@emilyrosetrust.com" className="text-primary underline hover:text-primary/80 transition-colors">info@emilyrosetrust.com</a>
+                <a href="mailto:trustees@emilyrosetrust.com" className="text-primary underline hover:text-primary/80 transition-colors">trustees@emilyrosetrust.com</a>
               </p>
               <p className="mt-3">
                 If you believe your data has been handled improperly, you may lodge a complaint with the{" "}
@@ -187,7 +187,7 @@ const PrivacyPolicy = () => {
               <p>If you have any questions about this Privacy Policy or your personal data, please contact:</p>
               <p className="mt-3">
                 Email:{" "}
-                <a href="mailto:info@emilyrosetrust.com" className="text-primary underline hover:text-primary/80 transition-colors">info@emilyrosetrust.com</a>
+                <a href="mailto:trustees@emilyrosetrust.com" className="text-primary underline hover:text-primary/80 transition-colors">trustees@emilyrosetrust.com</a>
               </p>
               <p className="mt-1">
                 Website:{" "}

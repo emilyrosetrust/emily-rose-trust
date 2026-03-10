@@ -146,7 +146,7 @@ const CookiePolicy = () => {
               <p>If you have questions regarding this Cookie Policy, please contact:</p>
               <p className="mt-3">
                 Email:{" "}
-                <a href="mailto:info@emilyrosetrust.com" className="text-primary underline hover:text-primary/80 transition-colors">info@emilyrosetrust.com</a>
+                <a href="mailto:trustees@emilyrosetrust.com" className="text-primary underline hover:text-primary/80 transition-colors">trustees@emilyrosetrust.com</a>
               </p>
               <p className="mt-1">
                 Website:{" "}

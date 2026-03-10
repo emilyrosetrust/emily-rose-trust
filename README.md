@@ -80,7 +80,7 @@ emily-rose-trust/
 ## Contact
 
 For questions about the Emily Rose Trust, please contact:
-- Email: info@emilyrosetrust.com
+- Email: trustees@emilyrosetrust.com
 - Website: https://emilyrosetrust.com
 
 ## License

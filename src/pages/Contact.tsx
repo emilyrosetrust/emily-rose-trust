@@ -75,10 +75,10 @@ const Contact = () => {
 
             <div className="text-center mb-10">
               <a
-                href="mailto:info@emilyrosetrust.com"
+                href="mailto:trustees@emilyrosetrust.com"
                 className="text-primary hover:text-primary/80 transition-colors font-medium"
               >
-                info@emilyrosetrust.com
+                trustees@emilyrosetrust.com
               </a>
             </div>
 

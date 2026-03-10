@@ -47,10 +47,10 @@ const Footer = () => {
             </h4>
             <nav className="flex flex-col gap-2" aria-label="Contact options">
               <a
-                href="mailto:info@emilyrosetrust.com?subject=Emily Rose Trust Website Contact"
+                href="mailto:trustees@emilyrosetrust.com?subject=Emily Rose Trust Website Contact"
                 className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
               >
-                info@emilyrosetrust.com
+                trustees@emilyrosetrust.com
               </a>
               <Link to="/contact" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">Contact Form</Link>
             </nav>
